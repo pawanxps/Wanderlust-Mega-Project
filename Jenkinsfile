@@ -3,7 +3,7 @@ pipeline {
     agent {label 'Node'}
     
     environment{
-        SONAR_HOME = tool "sonar"
+        SONAR_HOME = tool "Sonar"
     }
     
     parameters {
@@ -56,7 +56,7 @@ pipeline {
         stage("SonarQube: Code Analysis"){
             steps{
                 script{
-                    sonarqube_analysis("sonar","wanderlust","wanderlust")
+                    sonarqube_analysis("Sonar","wanderlust","wanderlust")
                 }
             }
         }
