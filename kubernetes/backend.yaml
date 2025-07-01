@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: pawanxps/wanderlust-backend-beta:2.0
+          image: pawanxpress/wanderlust-backend-beta:2.0
           ports:
             - containerPort: 8080
 ---
